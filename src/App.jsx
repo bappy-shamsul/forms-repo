@@ -30,8 +30,18 @@ function App() {
       {/* <RefForm></RefForm> */}
       {/* <Hooks></Hooks> */}
       {/* <Hookks></Hookks> */}
-      <ReusableForm formTitle='Sign Up' handleSubmit={handleSignSubmit}></ReusableForm>
-      <ReusableForm formTitle='Update Profile' submitBtn='Update' handleSubmit={handleUpdateSubmit}></ReusableForm>
+      <ReusableForm formTitle='Sign Up' handleSubmit={handleSignSubmit}>
+        <div>
+          <h2>Sign Up</h2>
+          <p>Fo registration</p>
+        </div>
+      </ReusableForm>
+      <ReusableForm formTitle='Update Profile' submitBtn='Update' handleSubmit={handleUpdateSubmit}>
+      <div>
+          <h2>Update Profile</h2>
+          <p>Change we need!!</p>
+        </div>
+      </ReusableForm>
     </div>
     </>
   )
